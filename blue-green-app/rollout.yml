@@ -19,7 +19,7 @@ spec:
       # stack as soon as the ReplicaSet are completely ready/available.
       # Rollouts can be resumed using: `kubectl argo rollouts promote ROLLOUT`      
       autoPromotionEnabled: false
-  revisionHistoryLimit: 2
+  revisionHistoryLimit: 4
   selector:
     matchLabels:
       app: trivial-go-web-app
