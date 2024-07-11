@@ -8,7 +8,8 @@ spec:
     app: trivial-go-web-app
   ports:
     #- nodePort: 32000
-    - name: http-service
+    - name: http-service-preview
       protocol: TCP
       port: 80
+      targetPort: 8080
 
